@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://8f-nai.net/wakdok/</loc>
+    <loc>http://8f-nai.net/wakdok/</loc>
+    <lastmod>2023-07-21T11:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://8f-nai.net/wakdok/categories/</loc>
+    <loc>http://8f-nai.net/wakdok/post/</loc>
+    <lastmod>2023-07-21T11:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://8f-nai.net/wakdok/tags/</loc>
+    <loc>http://8f-nai.net/wakdok/post/20230721_opening/</loc>
+    <lastmod>2023-07-21T11:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://8f-nai.net/wakdok/post/</loc>
+    <loc>http://8f-nai.net/wakdok/categories/</loc>
+  </url><url>
+    <loc>http://8f-nai.net/wakdok/tags/</loc>
   </url>
 </urlset>
