@@ -3,11 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://8f-nai.net/wakdok/</loc>
+    <lastmod>2023-07-21T11:39:00+09:00</lastmod>
+  </url><url>
+    <loc>https://8f-nai.net/wakdok/post/</loc>
+    <lastmod>2023-07-21T11:39:00+09:00</lastmod>
+  </url><url>
+    <loc>https://8f-nai.net/wakdok/post/20230721_opening/</loc>
+    <lastmod>2023-07-21T11:39:00+09:00</lastmod>
   </url><url>
     <loc>https://8f-nai.net/wakdok/categories/</loc>
   </url><url>
     <loc>https://8f-nai.net/wakdok/tags/</loc>
-  </url><url>
-    <loc>https://8f-nai.net/wakdok/post/</loc>
   </url>
 </urlset>
