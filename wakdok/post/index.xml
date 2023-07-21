@@ -2,19 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>最新情報 on 夏のわくわく読書感想文コンクール</title>
-    <link>http://8f-nai.net/wakdok/post/</link>
+    <link>https://8f-nai.net/wakdok/post/</link>
     <description>Recent content in 最新情報 on 夏のわくわく読書感想文コンクール</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Fri, 21 Jul 2023 11:39:00 +0900</lastBuildDate><atom:link href="http://8f-nai.net/wakdok/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>第1回 夏のわくわく読書感想文コンクールの開催</title>
-      <link>http://8f-nai.net/wakdok/post/20230721_opening/</link>
-      <pubDate>Fri, 21 Jul 2023 11:39:00 +0900</pubDate>
-      
-      <guid>http://8f-nai.net/wakdok/post/20230721_opening/</guid>
-      <description>第1回 夏のわくわく読書感想文コンクールの情報を公開しました。 まだ不足している情報がありますが、順次追記・修正していきたいと思います。 課題図書は未決定ですので少々お待ちください。 自由図書部門に応募したい方は、最低限情報が公開できているので感想文作成に着手しても問題ないかと思います。 重大な変更があった場合はまた「お知らせ」にて共有いたします。</description>
-    </item>
-    
+    <language>ja</language><atom:link href="https://8f-nai.net/wakdok/post/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
