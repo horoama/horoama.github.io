@@ -50,14 +50,52 @@
 <meta itemprop="keywords" content="" />
 
 <style>
-#site-head #entry-tweet{
-  background-color: #1DA1F2;
-  outline: thick double #32a1ce;
-}
 span {
     display: inline-block;
 }
+a#blog-logo {
+    margin: 20px;
+    line-height: 1.6em;
+}
+a {
+  text-underline-offset: 7px;
+}
+i {
+  margin: 5px;
+}
+.font-small {
+  font-size: 50%;
+}
+.post {
+  position: relative;
+  max-width: 90%;
+  width: 900px;
+  margin: 0rem auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  height: 70%;
+  word-break: break-word;
+  hyphens: auto;
+  font-size: 1.2em;
+}
+body {
+  height: 100%;
+  max-height: 100%;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: var(--section-light-text-color);
+}
 </style>
+<script src="https://deno.land/x/embed_pdf@v1.2.0/mod.js" type="module"></script>
+<script>
+var x ;
+window.onload = function() {
+  x = parseInt(window.getComputedStyle(document.getElementsByClassName("post-content")[0]).fontSize);
+}
+function larger()  { x += 5; document.getElementsByClassName('post-content')[0].style.fontSize = x + 'px'; }
+function smaller() { x -= 5; document.getElementsByClassName('post-content')[0].style.fontSize = x + 'px'; }
+</script>
 <link
 rel="apple-touch-icon"
 sizes="180x180"
@@ -87,6 +125,15 @@ href="https://8f-nai.net/wakdok/images/favicon-16x16.png"
       </header>
       <h1 class="post-title">第1回 夏のわくわく読書感想文コンクールの開催</h1>
       <section class="post-content">
+        <a href="https://twitter.com/share?url=https%3a%2f%2f8f-nai.net%2fwakdok%2fpost%2f20230721_opening%2f&text=%e7%ac%ac1%e5%9b%9e%20%e5%a4%8f%e3%81%ae%e3%82%8f%e3%81%8f%e3%82%8f%e3%81%8f%e8%aa%ad%e6%9b%b8%e6%84%9f%e6%83%b3%e6%96%87%e3%82%b3%e3%83%b3%e3%82%af%e3%83%bc%e3%83%ab%e3%81%ae%e9%96%8b%e5%82%ac%20-%20%e5%a4%8f%e3%81%ae%e3%82%8f%e3%81%8f%e3%82%8f%e3%81%8f%e8%aa%ad%e6%9b%b8%e6%84%9f%e6%83%b3%e6%96%87%e3%82%b3%e3%83%b3%e3%82%af%e3%83%bc%e3%83%ab #wakdok" target="_blank" class="twitter-share-button" data-show-count="false"></a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+        <div style="text-align: right;">
+          文字サイズ
+          <button type="button" onclick="smaller()">小さく</button>
+          <button type="button" onclick="larger()">大きく</button>
+        </div> 
         <p>第1回 夏のわくわく読書感想文コンクールの情報を公開しました。
 まだ不足している情報がありますが、順次追記・修正していきたいと思います。
 課題図書は未決定ですので少々お待ちください。

@@ -45,14 +45,52 @@
 <meta itemprop="description" content="「第1回 夏のわくわく読書感想文コンクール」を開催します。今年度のキャッチコピーは夏に読んで、夏に書こう。本コンクールの略称は「わくどく」です。SNSではハッシュタグ「#wakdok」を使って是非盛り上げてください。">
 
 <style>
-#site-head #entry-tweet{
-  background-color: #1DA1F2;
-  outline: thick double #32a1ce;
-}
 span {
     display: inline-block;
 }
+a#blog-logo {
+    margin: 20px;
+    line-height: 1.6em;
+}
+a {
+  text-underline-offset: 7px;
+}
+i {
+  margin: 5px;
+}
+.font-small {
+  font-size: 50%;
+}
+.post {
+  position: relative;
+  max-width: 90%;
+  width: 900px;
+  margin: 0rem auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  height: 70%;
+  word-break: break-word;
+  hyphens: auto;
+  font-size: 1.2em;
+}
+body {
+  height: 100%;
+  max-height: 100%;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: var(--section-light-text-color);
+}
 </style>
+<script src="https://deno.land/x/embed_pdf@v1.2.0/mod.js" type="module"></script>
+<script>
+var x ;
+window.onload = function() {
+  x = parseInt(window.getComputedStyle(document.getElementsByClassName("post-content")[0]).fontSize);
+}
+function larger()  { x += 5; document.getElementsByClassName('post-content')[0].style.fontSize = x + 'px'; }
+function smaller() { x -= 5; document.getElementsByClassName('post-content')[0].style.fontSize = x + 'px'; }
+</script>
 <link
 rel="apple-touch-icon"
 sizes="180x180"
@@ -82,6 +120,9 @@ href="https://8f-nai.net/wakdok/images/favicon-16x16.png"
     </header>
     <h1 class="post-title">Categories</h1>
     <section class="post-content">
+      <section class="post-content">
+        
+      </section>
       <ul>
         
       </ul>
