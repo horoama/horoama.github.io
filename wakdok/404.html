@@ -45,6 +45,17 @@
 <meta itemprop="description" content="「第1回 夏のわくわく読書感想文コンクール」を開催します。今年度のキャッチコピーは夏に読んで、夏に書こう。本コンクールの略称は「わくどく」です。SNSではハッシュタグ「#wakdok」を使って是非盛り上げてください。">
 
 <style>
+.fa-ul {
+  margin-left: 10px;
+}
+#site-head #entry-tweet{
+  background-color: #4DC1F2;
+  outline: gray;
+  outline-style: inset;
+  &:hover {
+    background-color: #2D91B2;
+  }
+}
 span {
     display: inline-block;
 }
@@ -91,6 +102,7 @@ img[src$='#floatleft']
 }
 </style>
 <script src="https://deno.land/x/embed_pdf@v1.2.0/mod.js" type="module"></script>
+<script src="https://unpkg.com/budoux/bundle/budoux-ja.min.js"></script>
 <script>
 var x ;
 window.onload = function() {
