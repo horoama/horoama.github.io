@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冬のわくわく書き初め展覧会</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Noto+Serif+JP', serif;
+        }
+        
+        .snow {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgb(248, 246, 246);
+            border-radius: 50%;
+            opacity: 0;
+            animation: snowfall 10s linear infinite;
+        }
+        
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-100px) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(50px);
+                opacity: 0;
+            }
+        }
+        
+        .snow:nth-child(1) { left: 5%; animation-delay: 0s; width: 8px; height: 8px; animation-duration: 12s; }
+        .snow:nth-child(2) { left: 15%; animation-delay: 2s; width: 6px; height: 6px; animation-duration: 15s; }
+        .snow:nth-child(3) { left: 25%; animation-delay: 4s; width: 10px; height: 10px; animation-duration: 10s; }
+        .snow:nth-child(4) { left: 35%; animation-delay: 1s; width: 7px; height: 7px; animation-duration: 13s; }
+        .snow:nth-child(5) { left: 45%; animation-delay: 3s; width: 9px; height: 9px; animation-duration: 11s; }
+        .snow:nth-child(6) { left: 55%; animation-delay: 5s; width: 8px; height: 8px; animation-duration: 14s; }
+        .snow:nth-child(7) { left: 65%; animation-delay: 2.5s; width: 6px; height: 6px; animation-duration: 16s; }
+        .snow:nth-child(8) { left: 75%; animation-delay: 4.5s; width: 10px; height: 10px; animation-duration: 12s; }
+        .snow:nth-child(9) { left: 85%; animation-delay: 1.5s; width: 7px; height: 7px; animation-duration: 13s; }
+        .snow:nth-child(10) { left: 95%; animation-delay: 3.5s; width: 9px; height: 9px; animation-duration: 11s; }
+        
+        .bamboo-pattern {
+            background-image: 
+                linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+                linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .ink-brush {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-900 via-indigo-900 to-slate-900 min-h-screen bamboo-pattern overflow-x-hidden relative">
+    <!-- 雪の結晶 -->
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    
+    <!-- ヘッダー装飾 -->
+    <div class="w-full h-3 bg-gradient-to-r from-red-700 via-amber-600 to-red-700"></div>
+    
+    <div class="container mx-auto px-4 py-12 max-w-6xl relative z-10">
+        <!-- メインタイトル -->
+        <header class="text-center mb-16 relative">
+            <div class="inline-block">
+                <div class="border-4 border-red-700 bg-white bg-opacity-95 p-8 rounded-lg shadow-2xl backdrop-blur-sm">
+                    <div class="text-red-700 text-base tracking-widest mb-3">🎍 令和八年 🎍</div>
+                    <h1 class="text-6xl font-bold text-gray-900 mb-4 tracking-wide ink-brush">
+                        冬のわくわく書き初め
+                    </h1>
+                    <h1 class="text-6xl font-bold text-gray-900 mb-4 tracking-wide ink-brush">
+                        展覧会
+                    </h1>
+                    <div class="text-xl text-red-700 tracking-widest mt-4">
+                        〜 筆に新たな想いを込めて 〜
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 趣旨 -->
+        <section class="mb-12 bg-slate-400 bg-opacity-90 rounded-lg shadow-xl p-8 border-l-4 border-blue-600 backdrop-blur-sm">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <span class="inline-block w-2 h-8 bg-blue-600 mr-3"></span>
+                趣旨
+            </h2>
+            <div class="text-gray-800 leading-relaxed space-y-4 text-base pl-5">
+                <p>
+                    書き初めは新年の始まりに心を新たにし、半紙に願いや抱負を込めて文字を書く日本の伝統的な文化行事です。
+                </p>
+                <p>
+                    あらゆる文字を親指ひとつで入力できる現代において、筆を使って文字を書く体験は、きっと特別な意味を持つことでしょう。
+                <p>
+                    また、お正月に書き初め会を開催し、筆で書く楽しさを知る機会を提供したいと考えています。
+                </p>
+            </div>
+            <div class="text-gray-800 leading-relaxed space-y-4 text-base p-5">
+                <a href="https://twitter.com/intent/tweet?text=%E5%86%AC%E3%81%AE%E3%82%8F%E3%81%8F%E3%82%8F%E3%81%8F%E6%9B%B8%E3%81%8D%E5%88%9D%E3%82%81%E5%B1%95%E8%A6%A7%E4%BC%9A%20%23wakzome%20https%3A%2F%2F8f-nai.net%2Fwakzome%2F&hashtags=#wakzome&url=https%3A%2F%2F8f-nai.net%2Fwakzome%2F" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center px-4 py-2 border border-gray-300 rounded text-sm text-gray-600 bg-white hover:bg-gray-50 transition-colors duration-200"
+                >
+                    <svg class="w-4 h-4 mr-2 text-gray-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                    Share on X
+                </a>
+            </div>
+        </section>
+        <!-- 開催概要 -->
+        <section class="mb-12 bg-slate-400 bg-opacity-90 rounded-lg shadow-xl p-8 border-l-4 border-red-700 backdrop-blur-sm">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <span class="inline-block w-2 h-8 bg-red-700 mr-3"></span>
+                開催概要
+            </h2>
+            <div class="text-gray-800 leading-relaxed space-y-4 text-base pl-5">
+                <p>
+                    本コクールは、SNSにおいて書き初め作品を募集し、参加者同士で新年の抱負やメッセージを共有することを目的としています。
+                </p>
+                <p>
+                    主催による審査は行わず、参加者全員が互いの作品を楽しみ、交流する場とします。
+                </p>
+            </div>
+        </section>
+
+        <!-- 開催期間 -->
+        <section class="mb-12 bg-slate-400 bg-opacity-90 rounded-lg shadow-xl p-8 border-l-4 border-red-700 backdrop-blur-sm">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <span class="inline-block w-2 h-8 bg-red-700 mr-3"></span>
+                開催期間
+            </h2>
+            <div class="space-y-3 pl-5">
+                <p class="text-lg">
+                    <span class="font-semibold text-red-800">作品募集期間：</span>
+                    <span class="text-xl text-white">2026年1月1日（月）〜 1月15日（月）</span>
+                </p>
+            </div>
+        </section>
+
+
+
+        <!-- 応募方法  -->
+        <section class="mb-12 bg-slate-400 bg-opacity-90 rounded-lg shadow-xl p-8 border-l-4 border-red-700 backdrop-blur-sm">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <span class="inline-block w-2 h-8 bg-red-700 mr-3"></span>
+                応募方法
+            </h2>
+            <div class="text-gray-800 leading-relaxed space-y-4 text-base pl-5">
+                <p>
+                    1. 書き初め作品を用意します。用紙のサイズは自由ですが、写真やスキャンで鮮明に撮影できるようにしてください。
+                </p>
+                <p>
+                    2. Twitter(現X)にて、作品の写真を添付し、ハッシュタグ <span class="font-semibold text-red-800">#wakzome</span> を付けて投稿してください。
+                </p>
+                <p>
+                    3. 投稿の際に、作品に込めた想いやメッセージを添えていただけると嬉しいです。
+                </p>
+            </div>
+        </section>
+        <!-- 書き初め会のご案内 -->
+        <section>
+            <div class="mb-12 bg-slate-400 bg-opacity-90 rounded-lg shadow-xl p-8 border-l-4 border-red-700 backdrop-blur-sm">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <span class="inline-block w-2 h-8 bg-red-700 mr-3"></span>
+                    書き初め会のご案内
+                </h2>
+                <div class="text-gray-800 leading-relaxed space-y-4 text-base pl-5">
+                    <p>
+                        2026年1月3日（土）に代々木公園にて、書き初め会を開催します。筆や墨、用紙などの道具は主催が用意いたします。
+                        詳細は追ってTwitter(現X)にてお知らせいたします。
+                    </p>
+                    <p>
+                        情報を漏らさぬよう、主催のアカウント（<a href="https://x.com/horoama" target="_blank" class="underline hover:text-yellow-300">@horoama</a>）をフォローして最新情報をお受け取りください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="text-center bg-gradient-to-r from-red-700 to-red-800 text-white rounded-lg shadow-xl p-8">
+            <h2 class="text-2xl font-bold mb-4">お問い合わせ</h2>
+            <p class="mb-2 text-lg">ほろあま</p>
+            <p class="mb-4 text-lg"> <a href="https://x.com/horoama" target="_blank" class="underline hover:text-yellow-300">@horoama</a></p>
+            <p class="mt-4 text-sm opacity-90">皆様のご応募を心よりお待ちしております</p>
+        </section>
+    </div>
+
+    <!-- フッター装飾 -->
+    <div class="w-full h-3 bg-gradient-to-r from-red-700 via-amber-600 to-red-700 mt-12"></div>
+</body>
+</html>
