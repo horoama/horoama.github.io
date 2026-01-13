@@ -1,122 +1,159 @@
 <!DOCTYPE html>
-
 <html lang="ja">
   <head>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>8階ない</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
   </head>
-  <body>
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-10 mx-auto">
+  <body class="bg-slate-50 text-slate-600">
+    <section class="body-font">
+      <div class="container px-5 py-16 mx-auto">
+
+        <!-- Header Section -->
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+          <h1 class="text-3xl sm:text-5xl font-bold title-font text-slate-800 mb-2 tracking-tight">
             8階ない
           </h1>
-          <h2>HOROAMA NOT ON THE 8TH FLOOR</h2>
-          <div class="flex justify-center">
-            <img class="" src="./no_8th_floor.png" width="400px" />
+          <h2 class="text-xs sm:text-sm font-semibold text-slate-500 tracking-[0.2em] mb-10 uppercase">
+            HOROAMA NOT ON THE 8TH FLOOR
+          </h2>
+          <div class="flex justify-center mb-10">
+            <img class="rounded-2xl shadow-xl object-cover" src="./no_8th_floor.png" width="400px" alt="no_8th_floor" />
           </div>
           <div class="flex justify-center">
-            <form action="http://clap.webclap.com/clap.php?id=horoama&amp;page_id=8f-nai" method="post" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-              <div>
-                <input type="submit" value="拍手ボタン" onclick="window.open('http://clap.webclap.com/clap.php?id=horoama&amp;page_id=8f-nai','webclap','toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes');return false;" style="background-color: inherit">
-              </div>
+            <form action="http://clap.webclap.com/clap.php?id=horoama&amp;page_id=8f-nai" method="post" target="_blank">
+              <input
+                type="submit"
+                value="拍手ボタン"
+                onclick="window.open('http://clap.webclap.com/clap.php?id=horoama&amp;page_id=8f-nai','webclap','toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes');return false;"
+                class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transform transition hover:scale-105 duration-300 cursor-pointer border-0 ring-0 focus:outline-none focus:ring-4 focus:ring-blue-300"
+              >
             </form>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center -m-4">
-          <a class="p-4 md:w-1/3" href="https://blog.8f-nai.net/" target="_blank">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                </svg>
-                <h2 class="text-gray-900 text-lg title-font font-medium">
+
+        <!-- Links Grid -->
+        <div class="flex flex-wrap -m-4">
+
+          <!-- Blog -->
+          <a class="p-4 md:w-1/3 w-full group" href="https://blog.8f-nai.net/" target="_blank">
+            <div class="flex rounded-2xl h-full bg-white p-8 flex-col border border-slate-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                  </svg>
+                </div>
+                <h2 class="text-slate-800 text-lg title-font font-bold">
                   Blog
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">インターネット自由帳</p>
+                <p class="leading-relaxed text-base text-slate-500">インターネット自由帳</p>
               </div>
             </div>
           </a>
-          <a class="p-4 md:w-1/3" href="https://twitter.com/horoama" target="_blank">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <svg
-                  class="w-6 h-6 text-blue-300 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                  />
-                </svg>
-                <h2 class="text-gray-900 text-lg title-font font-medium">
+
+          <!-- Twitter -->
+          <a class="p-4 md:w-1/3 w-full group" href="https://twitter.com/horoama" target="_blank">
+            <div class="flex rounded-2xl h-full bg-white p-8 flex-col border border-slate-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mr-3 flex-shrink-0">
+                  <svg
+                    class="w-5 h-5 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    />
+                  </svg>
+                </div>
+                <h2 class="text-slate-800 text-lg title-font font-bold">
                   Twitter
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">Twitterアカウント。だいたいここにいる。</p>
+                <p class="leading-relaxed text-base text-slate-500">Twitterアカウント。だいたいここにいる。</p>
               </div>
             </div>
           </a>
-          <a class="p-4 md:w-1/3" href="https://warubure.online/@horoama" target="_blank">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"/></svg>
-                <h2 class="text-gray-900 text-lg title-font font-medium">
+
+          <!-- Warubure -->
+          <a class="p-4 md:w-1/3 w-full group" href="https://warubure.online/@horoama" target="_blank">
+            <div class="flex rounded-2xl h-full bg-white p-8 flex-col border border-slate-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="fill-current w-5 h-5"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"/></svg>
+                </div>
+                <h2 class="text-slate-800 text-lg title-font font-bold">
                   ワルブレオンライン
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">おひとりさまのMisskey鯖。あまりいない。</p>
+                <p class="leading-relaxed text-base text-slate-500">おひとりさまのMisskey鯖。あまりいない。</p>
               </div>
             </div>
           </a>
-          <a class="p-4 md:w-1/3" href="https://filmarks.com/users/horoama" target="_blank">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM48 368v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H416zM48 240v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H416zM48 112v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zM416 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H416zM160 128v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H192c-17.7 0-32 14.3-32 32zm32 160c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V320c0-17.7-14.3-32-32-32H192z"/></svg>
-                <h2 class="text-gray-900 text-lg title-font font-medium">
+
+          <!-- Filmarks -->
+          <a class="p-4 md:w-1/3 w-full group" href="https://filmarks.com/users/horoama" target="_blank">
+            <div class="flex rounded-2xl h-full bg-white p-8 flex-col border border-slate-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="fill-current w-5 h-5"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM48 368v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H416zM48 240v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H416zM48 112v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zM416 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H416zM160 128v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H192c-17.7 0-32 14.3-32 32zm32 160c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V320c0-17.7-14.3-32-32-32H192z"/></svg>
+                </div>
+                <h2 class="text-slate-800 text-lg title-font font-bold">
                   Filmarks
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">過去の映画記録。映画好き。</p>
+                <p class="leading-relaxed text-base text-slate-500">過去の映画記録。映画好き。</p>
               </div>
             </div>
           </a>
-          <a class="p-4 md:w-1/3" href="https://8f-nai.net/wakdok/" target="_blank">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                <h2 class="text-gray-900 text-lg title-font font-medium">
+
+          <!-- Wakdok -->
+          <a class="p-4 md:w-1/3 w-full group" href="https://8f-nai.net/wakdok/" target="_blank">
+            <div class="flex rounded-2xl h-full bg-white p-8 flex-col border border-slate-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="fill-current w-5 h-5"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                </div>
+                <h2 class="text-slate-800 text-lg title-font font-bold">
                   夏のわくわく読書感想文コンクール
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">主催する読書感想文コンクール</p>
+                <p class="leading-relaxed text-base text-slate-500">主催する読書感想文コンクール</p>
               </div>
             </div>
           </a>
-          <a class="p-4 md:w-1/3" href="https://8f-nai.net/wakzome/" target="_blank">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                <h2 class="text-gray-900 text-lg title-font font-medium">
+
+          <!-- Wakzome -->
+          <a class="p-4 md:w-1/3 w-full group" href="https://8f-nai.net/wakzome/" target="_blank">
+            <div class="flex rounded-2xl h-full bg-white p-8 flex-col border border-slate-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="fill-current w-5 h-5"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                </div>
+                <h2 class="text-slate-800 text-lg title-font font-bold">
                   冬ののわくわく書き初め展覧会
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">主催する書き初め展覧会</p>
+                <p class="leading-relaxed text-base text-slate-500">主催する書き初め展覧会</p>
               </div>
             </div>
           </a>
+
         </div>
       </div>
     </section>
